@@ -1,0 +1,78 @@
+/* Бүтүндөй барактын дизайны (Арткы фон) */
+body {
+    background-image: url('bg.jpg'); /* Сүрөт туптунук көрүнөт */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Экран кичирейгенде четтерине жабышпоо үчүн */
+    box-sizing: border-box;
+}
+
+/* Жазуулар жайгашкан ак блок (Карта) */
+.main-card {
+    background-color: rgba(255, 255, 255, 0.92); /* Жумшак ак фон */
+    padding: 40px;          /* Ичинен ташталган боштук (отступ) */
+    border-radius: 16px;     /* Бурчтарын кооз кылып тегеректөө */
+    max-width: 600px;        /* Блоктун максималдуу туурасы */
+    width: 100%;             /* Телефондордо экранга жараша кичирейет */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Арткы сүрөттөн бөлүүчү көлөкө */
+    text-align: center;      /* Ичиндеги баардык элементтерди ортолоо */
+}
+
+/* Логотиптин дизайны */
+.site-logo {
+    width: 150px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Баш сөздүн дизайны */
+h1 {
+    color: #1e3a8a;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Тексттин дизайны */
+p {
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.6; /* Саптардын ортосундагы аралык */
+    margin-bottom: 0;
+}
+/* Баскычтын негизги дизайны */
+.btn-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #1e3a8a; /* ОшМУнун кочкул көк түсү */
+    color: white;               /* Тексттин түсү ак */
+    text-decoration: none;      /* Астындагы сызыкты алып салат */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;        /* Четтерин сүйрү (тегерек) кылат */
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3); /* Жеңил көлөкө */
+    transition: all 0.3s ease;  /* Өзгөрүү убактысы (плавно болушу үчүн) */
+}
+
+/* Чычканды баскычтын үстүнө алып баргандагы эффект (Hover) */
+.btn-link:hover {
+    background-color: #2563eb; /* Түсү бир аз ачык көккө өзгөрөт */
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); /* Көлөкөсү чоңоет */
+    transform: translateY(-2px); /* Баскыч бир аз өйдөгө көтөрүлөт */
+}
+
+/* Баскычты баскан учурдагы эффект (Active) */
+.btn-link:active {
+    transform: translateY(1px); /* Басканда бир аз ылдый түшөт */
+}

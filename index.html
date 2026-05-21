@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ош мамлекеттик университети</title>
+    
+    <style>
+        /* Бүтүндөй барактын дизайны (Арткы фон) */
+        body {
+            background-image: url('bg.jpg'); /* Сүрөтүңүздүн аты ушундай болушу керек */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Жазуулар жайгашкан ак блок (Карта) */
+        .main-card {
+            background-color: rgba(255, 255, 255, 0.92); /* Жумшак ак фон */
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Арткы сүрөттөн бөлүүчү көлөкө */
+            text-align: center;
+        }
+
+        /* Логотиптин дизайны */
+        .site-logo {
+            width: 150px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Баш сөздүн дизайны */
+        h1 {
+            color: #1e3a8a; /* Кочкул көк түс */
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Тексттин дизайны */
+        p {
+            color: #4b5563;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Баскычтын (Кнопка) дизайны */
+        .btn-link {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+            transition: all 0.3s ease; /* Кыймылдын жумшактыгы */
+        }
+
+        /* Чычканды баскычтын үстүнө алып барганда */
+        .btn-link:hover {
+            background-color: #2563eb; /* Түсү ачык көккө өзгөрөт */
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+            transform: translateY(-2px); /* Бир аз өйдө көтөрүлөт */
+        }
+
+        /* Баскычты баскан учурда */
+        .btn-link:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <h1>Ош мамлекеттик университети</h1>
+        
+        <img src="logo.png" alt="ОшМУ Логотип" class="site-logo">
+        
+        <p>Кош келиңиз! Бул жөнөкөй сайт ОшМУ тууралуу маалымат берет.</p>
+
+        <a href="https://www.oshsu.kg" target="_blank" class="btn-link">Расмий сайтка өтүү</a>
+    </div>
+
+</body>
+</html>
