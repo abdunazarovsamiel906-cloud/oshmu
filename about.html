@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ОшМУ тууралуу маалымат</title>
+    <title>ОшМУ - Бөлүмдөр</title>
     <style>
         body {
             background-image: url('bg.jpg');
@@ -20,33 +20,49 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        .info-card {
+        .menu-card {
             background-color: rgba(255, 255, 255, 0.96);
             padding: 40px;
             border-radius: 16px;
             max-width: 600px;
             width: 100%;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
         h2 {
             color: #1e3a8a;
-            text-align: center;
-            margin-top: 0;
+            margin-bottom: 10px;
         }
-        p {
-            color: #374151;
-            font-size: 16px;
-            line-height: 1.8;
-            text-align: justify;
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 30px;
         }
-        ul {
-            color: #374151;
-            font-size: 16px;
-            line-height: 1.8;
+        /* Баскычтардын торчосу (сетка) */
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Эки катар кылып бөлөт */
+            gap: 15px; /* Баскычтардын ортосундагы аралык */
+            margin-bottom: 30px;
+        }
+        .sub-btn {
+            display: block;
+            padding: 15px 20px;
+            background-color: #f3f4f6;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .sub-btn:hover {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+            transform: translateY(-2px);
         }
         .back-btn {
             display: inline-block;
-            margin-top: 25px;
             padding: 10px 25px;
             background-color: #4b5563;
             color: white;
@@ -62,19 +78,18 @@
 </head>
 <body>
 
-    <div class="info-card">
-        <h2>Ош мамлекеттик университети жөнүндө</h2>
-        <p><strong>ОшМУ</strong> — Кыргызстандын түштүгүндөгү эң ири, алдыңкы жана кадыр-барктуу жогорку окуу жайларынын бири. Ал узак тарыхка ээ жана өлкөбүзгө миңдеген жогорку квалификациялуу адистерди даярдап чыгарган.</p>
+    <div class="menu-card">
+        <h2>ОшМУ Маалымат Борбору</h2>
+        <p class="subtitle">Керектүү бөлүмдү тандап, кенен маалымат алыңыз:</p>
         
-        <h3>Биздин артыкчылыктар:</h3>
-        <ul>
-            <li>Заманбап билим берүү программалары</li>
-            <li>Эл аралык деңгээлдеги байланыштар жана тажрыйба алмашуу</li>
-            <li>Күчтүү профессордук-окутуучулук курам</li>
-            <li>Студенттер үчүн бардык заманбап шарттар (спорт комплекстери, IT борборлор)</li>
-        </ul>
+        <div class="buttons-grid">
+            <a href="faculties.html" class="sub-btn">🏛 Факультеттер</a>
+            <a href="rector.html" class="sub-btn">👨‍💼 Ректорат</a>
+            <a href="life.html" class="sub-btn">🎓 Студенттик жашоо</a>
+            <a href="mission.html" class="sub-btn">🎯 Университеттин миссиясы</a>
+        </div>
 
-        <a href="index.html" class="back-btn">⬅ Аркага кайтуу</a>
+        <a href="index.html" class="back-btn">⬅ Башкы бетке кайтуу</a>
     </div>
 
 </body>
